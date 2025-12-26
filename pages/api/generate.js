@@ -1,4 +1,3 @@
-// pages/api/generate.js
 import { generateFromIdea } from "../../utils/generator";
 
 export default async function handler(req, res) {

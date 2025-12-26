@@ -1,6 +1,4 @@
-// utils/generator.js
-// Deterministic, safe generator. Produces JS-only starter by default.
-// If includeNonJS = true, also includes example files for other languages (as text only).
+// Minimal generator: creates a JS-only Next.js starter.
 
 const allowedJSOnlyExts = new Set(['.js', '.json', '.css', '.md', '.gitignore', 'tailwind.config.js', 'postcss.config.js']);
 
@@ -181,7 +179,6 @@ export default function Home(){
 }
 `;
 
-  // WHY.md and ARCHITECTURE.md
   files["WHY.md"] = `# Why these tools?
 
 - Next.js — rapid React-based UI + built-in serverless API routes. Good for prototypes and production.
@@ -238,7 +235,7 @@ func main() { http.HandleFunc("/", handler); http.ListenAndServe(":8080", nil) }
   return files;
 }
 
-/* sanitize: ensure only allowed ext types included when includeNonJS = false */
+// Keep only JS-friendly files unless includeNonJS is true
 function sanitizeFiles(filesMap, includeNonJS = false) {
   const safe = {};
   for (const path in filesMap) {
@@ -333,8 +330,7 @@ function generateModules(text, domain) {
   return modules;
 }
 
-// Top-level API for generator
-function generateFromIdea({ idea = "", includeNonJS = false } = {}) {
+export function generateFromIdea({ idea = "", includeNonJS = false } = {}) {
   const cleaned = (idea || "").trim();
   const domain = extractDomain(cleaned);
   const stack = pickStack(cleaned);
@@ -402,4 +398,3 @@ function generateFromIdea({ idea = "", includeNonJS = false } = {}) {
   };
 }
 
-module.exports = { generateFromIdea };

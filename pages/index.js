@@ -88,7 +88,6 @@ export default function Home() {
 
         {result && (
           <>
-            {/* Generate Again / Clear Results Section */}
             <section className="card p-6 mb-6">
               <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                 <div className="text-center sm:text-left">

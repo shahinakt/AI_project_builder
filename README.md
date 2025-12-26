@@ -13,32 +13,7 @@
 - **Multiple Languages**: Support for JavaScript and other programming languages
 - **Zero Configuration**: Ready-to-run development environment
 
-## Project Structure
 
-```
-AI_project_builder/
-├── components/              # Reusable UI components
-│   ├── AnimatedButton.js   # Interactive button with animations
-│   ├── DarkModeToggle.js   # Theme switching component
-│   ├── Footer.js           # Application footer
-│   ├── Header.js           # Navigation and branding
-│   ├── Logo.js             # Brand logo component
-│   └── ResultCard.js       # Display generated project results
-├── contexts/               # React context providers
-│   └── ThemeContext.js     # Global theme state management
-├── pages/                  # Next.js pages and API routes
-│   ├── _app.js            # Application wrapper and global providers
-│   ├── index.js           # Homepage and main interface
-│   └── api/               # Backend API endpoints
-│       └── generate.js    # AI project generation endpoint
-├── styles/                # Global styling
-│   └── globals.css        # Base styles and Tailwind imports
-├── utils/                 # Utility functions and helpers
-│   └── generator.js       # Core project generation logic
-├── next.config.js         # Next.js configuration
-├── tailwind.config.js     # Tailwind CSS configuration
-└── package.json          # Dependencies and scripts
-```
 
 ## Quick Start
 
@@ -77,7 +52,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 | `npm run dev` | Start development server |
 | `npm run build` | Build for production |
 | `npm run start` | Start production server |
-| `npm run lint` | Run ESLint |
 
 ## Configuration
 
@@ -97,9 +71,9 @@ The project can be customized through:
 ## Contributing
 
 1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
 5. Open a Pull Request
 
 ## Support
@@ -117,5 +91,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 <p align="center">
-  Made with ❤️ by <a href="https://github.com/shahinakt">shahinakt</a>
+  Built by <a href="https://www.shahinasareen.tech">shahina sareen kt</a>
 </p>
