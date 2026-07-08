@@ -80,7 +80,7 @@ The project can be customized through:
 
 If you encounter any issues or have questions:
 
-- Email: [your-email@example.com](mailto:your-email@example.com)
+- Email: [zyxshyn07@gmail.com](mailto:zyxshyn07@gmail.com)
 - Issues: [GitHub Issues](https://github.com/shahinakt/AI_project_builder/issues)
 - Discussions: [GitHub Discussions](https://github.com/shahinakt/AI_project_builder/discussions)
 
